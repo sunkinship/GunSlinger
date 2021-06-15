@@ -20,6 +20,11 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
+    public void ButtonBack()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void ButtonQuit()
     {
         Application.Quit();
