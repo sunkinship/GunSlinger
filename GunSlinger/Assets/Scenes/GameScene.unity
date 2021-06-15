@@ -1420,7 +1420,7 @@ MonoBehaviour:
   bulletSpeed: 15
   Player: {fileID: 1401602733}
   allowFire: 0
-  rateOfFire: 1
+  rateOfFire: 3
 --- !u!1 &1492120282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1663,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c774644f9a234c7439a57605c8a13a9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bullet2: {fileID: 7967006085986537827, guid: 6f4826fd04e4e454eafabfdefbd44778, type: 3}
+  FirePoint2: {fileID: 1890183683}
+  bulletSpeed: 15
+  Player: {fileID: 1675130265}
+  allowFire: 0
+  rateOfFire: 3
 --- !u!1 &1867284974
 GameObject:
   m_ObjectHideFlags: 0
