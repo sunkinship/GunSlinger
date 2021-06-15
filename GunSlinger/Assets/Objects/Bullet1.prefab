@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2118038569418228858}
   - component: {fileID: 2118038569418228863}
   - component: {fileID: 2118038569418228856}
-  - component: {fileID: 2118038569418228861}
   - component: {fileID: 2118038569418228862}
   m_Layer: 0
   m_Name: Bullet1
@@ -120,22 +119,6 @@ CircleCollider2D:
   m_Offset: {x: -0.012162128, y: 0}
   serializedVersion: 2
   m_Radius: 0.43918926
---- !u!58 &2118038569418228861
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118038569418228859}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.49999997
 --- !u!114 &2118038569418228862
 MonoBehaviour:
   m_ObjectHideFlags: 0

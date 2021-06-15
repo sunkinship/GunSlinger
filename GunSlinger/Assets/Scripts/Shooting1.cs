@@ -17,7 +17,8 @@ public class Shooting1 : MonoBehaviour
     private void Start()
     {
         allowFire = true;
-        
+        FirePoint1.transform.rotation = Quaternion.Euler(0, 0, 0);
+
     }
 
     private void Update()

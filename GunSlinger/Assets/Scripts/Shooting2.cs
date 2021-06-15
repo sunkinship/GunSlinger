@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooting2 : MonoBehaviour
 {
-    public GameObject Bullet2;
+    public GameObject Bullet1;
     public Transform FirePoint2;
     public float bulletSpeed = 15f;
     public GameObject Player;
@@ -17,6 +17,7 @@ public class Shooting2 : MonoBehaviour
     private void Start()
     {
         allowFire = true;
+        FirePoint2.transform.rotation = Quaternion.Euler(0, 0, 180);
 
     }
 
@@ -67,7 +68,7 @@ public class Shooting2 : MonoBehaviour
 
     private void ShootUp()
     {
-        GameObject Bullet = Instantiate(Bullet2);
+        GameObject Bullet = Instantiate(Bullet1);
         Bullet.transform.position = FirePoint2.position;
         Bullet.transform.rotation = Quaternion.Euler(0, 0, 140);
         Bullet.GetComponent<Rigidbody2D>().velocity = FirePoint2.right * bulletSpeed;
@@ -86,7 +87,7 @@ public class Shooting2 : MonoBehaviour
 
     private void ShootDown()
     {
-        GameObject Bullet = Instantiate(Bullet2);
+        GameObject Bullet = Instantiate(Bullet1);
         Bullet.transform.position = FirePoint2.position;
         Bullet.transform.rotation = Quaternion.Euler(0, 0, 220);
         Bullet.GetComponent<Rigidbody2D>().velocity = FirePoint2.right * bulletSpeed;
@@ -105,7 +106,7 @@ public class Shooting2 : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject Bullet = Instantiate(Bullet2);
+        GameObject Bullet = Instantiate(Bullet1);
         Bullet.transform.position = FirePoint2.position;
         Bullet.transform.rotation = Quaternion.Euler(0, 0, 180);
         Bullet.GetComponent<Rigidbody2D>().velocity = FirePoint2.right * bulletSpeed;

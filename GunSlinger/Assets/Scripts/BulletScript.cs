@@ -21,11 +21,13 @@ public class BulletScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Player1"))
         {
             DestroySelf();
+            RightScore.instance.AddPoint();
         }
 
         if (collision.gameObject.CompareTag("Player2"))
         {
             DestroySelf();
+            LeftScore.instance.AddPoint();
         }
     }
 
