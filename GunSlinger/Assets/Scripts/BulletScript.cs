@@ -7,12 +7,20 @@ public class BulletScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("DestroySelf", 2);
     }
 
-    // Update is called once per frame
-    void Update()
+   
+    private void OnTrigger2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            DestroySelf();
+        }
+    }
+
+    private void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 }
