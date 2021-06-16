@@ -49,6 +49,9 @@ TagManager:
   - name: Border
     uniqueID: 1769098419
     locked: 0
+  - name: Top
+    uniqueID: 3226869781
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

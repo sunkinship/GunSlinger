@@ -10,6 +10,8 @@ public class Shooting2 : MonoBehaviour
     public GameObject Player;
     public bool allowFire;
     public float rateOfFire = 2f;
+    public Sprite RedBall;
+    public Sprite BrownBall;
 
 
 
@@ -110,5 +112,24 @@ public class Shooting2 : MonoBehaviour
         Bullet.transform.position = FirePoint2.position;
         Bullet.transform.rotation = Quaternion.Euler(0, 0, 180);
         Bullet.GetComponent<Rigidbody2D>().velocity = FirePoint2.right * bulletSpeed;
+    }
+
+    //taking damage
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet1"))
+        {
+            StartCoroutine(Hit());
+        }
+    }
+
+    IEnumerator Hit()
+    {
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = RedBall;
+
+        yield return new WaitForSeconds(0.2f);
+
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = BrownBall;
+
     }
 }
