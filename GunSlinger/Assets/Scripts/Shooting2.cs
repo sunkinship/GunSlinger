@@ -6,10 +6,10 @@ public class Shooting2 : MonoBehaviour
 {
     public GameObject Bullet1;
     public Transform FirePoint2;
-    public float bulletSpeed = 15f;
+    public float bulletSpeed = 13f;
     public GameObject Player;
     public bool allowFire;
-    public float rateOfFire = 3f;
+    public float rateOfFire = 2f;
 
 
 
